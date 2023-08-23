@@ -19,3 +19,6 @@ async function yelpPhoneSearch() {
     .then((response) => console.log(response))
     .catch((err) => console.error(err));
 }
+
+export default function yelpBusinessSearch();
+export default function yelpPhoneSearch();
