@@ -3,9 +3,9 @@
   --tan-1: #FBF9F6;
   --tan-2: #E7E2DD;
   --tan-3: #E2D9D1;
-  --tan-4: #D3C1AE;
-  --orange: #F67F00;
-  --text-light: #968c84;
+  --tan-4: #211f1d;
+  --orange: #c5291b;
+  --text-light: #2f2b28;
   --text-dark: #615954;
 }
 
@@ -82,6 +82,7 @@ code {
   background-color: var(--tan-1);
   border: .1vmin solid var(--tan-3);
   border-radius: 1vmin;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Adding a subtle box shadow */
 }
 
 p.error-message {

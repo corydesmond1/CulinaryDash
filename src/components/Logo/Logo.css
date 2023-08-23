@@ -1,13 +1,17 @@
+
 .Logo {
-  height: 12vmin;
-  width: 12vmin;
+  height: 25vmin;
+  width: 40vmin; /* Keep the width the same for a square container */
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  border-radius: 50%;
+  /* Change border-radius to 1vmin for a slight rounded corner effect */
+  border-radius: 1vmin;
   background-color: var(--orange);
   color: var(--tan-1);
-  font-size: 2.7vmin;
-  border: .6vmin solid var(--tan-2); 
+  font-size: 5vmin;
+  font-style: italic;
+  font-weight: bold;
+  border: .6vmin solid var(--tan-2);
 }
