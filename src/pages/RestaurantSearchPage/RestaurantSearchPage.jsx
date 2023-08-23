@@ -32,11 +32,14 @@ const YelpSearch = () => {
         />
         <button type="submit">Search</button>
       </form>
-      <ul>
+      <div className="results-container">
         {businesses.map((business) => (
-          <li key={business.id}> <img src={business.image_url}></img> Business Name: {business.name}</li>
+          <div key={business.id} className="result-item">
+            <img className="result-image" src={business.image_url} alt={business.name} />
+            <div className="result-name">{business.name}</div>
+          </div>
         ))}
-      </ul>
+        </div>
     </div>
   );
 };
@@ -45,10 +48,10 @@ export default YelpSearch;
 
 
 
-// export default function RestaurantSearchPage() {
+{/* export default function RestaurantSearchPage() {
 //     return (
 //       <>
 //         <h1>Restaurant Search Page</h1>
 //       </>
 //     );
-//   }
+//   } */}
