@@ -14,7 +14,7 @@ const options = {
     }
  };
 
-async function yelpBusinessSearch(term, location) {
+export async function yelpBusinessSearch(term, location) {
 
   return await fetch(
     `https://cors-anywhere.herokuapp.com/https://api.yelp.com/v3/businesses/search?term=${term}&location=${location}`,
@@ -24,11 +24,9 @@ async function yelpBusinessSearch(term, location) {
     
 };
 
-async function yelpPhoneSearch() {
-  fetch("https://api.yelp.com/v3/businesses/search/phone", options)
-    .then((response) => response.json())
-    .then((response) => console.log(response))
-    .catch((err) => console.error(err));
-}
-
-export default yelpBusinessSearch;
+ export async function yelpBusinessDetail(businessId) {
+  return await fetch(
+    `https://cors-anywhere.herokuapp.com/https://api.yelp.com/v3/businesses/${businessId}`,
+    options
+  ).then((response) => response.json());
+};

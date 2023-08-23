@@ -1,6 +1,8 @@
 import React, { useState } from 'react';
-import yelpBusinessSearch from '../../utilities/yelp-api';
+import { yelpBusinessSearch } from '../../utilities/yelp-api';
 import './RestaurantSearchPage.css';
+import { Link } from 'react-router-dom';
+
 
 
 const YelpSearch = () => {
@@ -34,12 +36,18 @@ const YelpSearch = () => {
       </form>
       <div className="results-container">
         {businesses.map((business) => (
-          <div key={business.id} className="result-item">
-            <img className="result-image" src={business.image_url} alt={business.name} />
-            <div className="result-name">{business.name}</div>
-          </div>
+          <Link to={business.id} key={business.id}>
+            <div className="result-item">
+              <img
+                className="result-image"
+                src={business.image_url}
+                alt={business.name}
+              />
+              <div className="result-name">{business.name}</div>
+            </div>
+          </Link>
         ))}
-        </div>
+      </div>
     </div>
   );
 };
