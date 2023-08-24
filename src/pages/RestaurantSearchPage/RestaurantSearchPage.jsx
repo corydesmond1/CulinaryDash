@@ -36,7 +36,7 @@ const YelpSearch = () => {
       </form>
       <div className="results-container">
         {businesses.map((business) => (
-          <Link to={business.id} key={business.id}>
+          <Link to={`/restaurants/${business.id}`} key={business.id}>
             <div className="result-item">
               <img
                 className="result-image"
