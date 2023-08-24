@@ -27,7 +27,7 @@ const RestaurantProfilePage = () => {
         <span>{businessDetails.price}</span>
         <span>{businessDetails.display_phone}</span>
       </div>
-      <span style={{ color: 'white'}}><h2>MENU GOES DOWN HERE</h2></span>
+      <span style={{ color: 'blue'}}><h2>MENU GOES DOWN HERE</h2></span>
     </div>
   );
 };

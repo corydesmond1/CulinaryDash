@@ -25,7 +25,7 @@
 
 .result-name {
   text-align: center;
-  color: white;
+  color: black;
   font-weight: bold;
 }
 
@@ -47,13 +47,13 @@
 .restaurant-name {
   font-size: 24px;
   font-weight: bold;
-  color: white;
+  color: black;
 }
 
 .details {
   font-size: 18px;
   margin-top: 10px;
-  color: white;
+  color: black;
 }
 
 .details span {
