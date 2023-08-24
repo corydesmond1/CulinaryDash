@@ -16,14 +16,17 @@
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-  'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-  sans-serif;
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: var(--tan-4);
+  background-image: url('https://img.freepik.com/free-photo/authentic-italian-pasta_24972-892.jpg?w=1800&t=st=1692890851~exp=1692891451~hmac=87bd5ecb71e37b38861ae7e0ba77f931513b0f4086aa87f1af480da17dbe20da'); 
+  background-size: cover; 
+  background-repeat: no-repeat; 
   padding: 2vmin;
   height: 100vh;
 }
+
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
