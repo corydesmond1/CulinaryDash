@@ -24,7 +24,8 @@ body {
   background-size: cover; 
   background-repeat: no-repeat; 
   padding: 2vmin;
-  height: 100vh;
+  height: 170vh;
+  width: 100vw;
 }
 
 

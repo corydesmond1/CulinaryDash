@@ -17,10 +17,12 @@
 
 .result-image {
   max-width: 100%;
-  height: auto;
+  height: 250px;
   margin-bottom: 10px;
   object-fit: cover;
   border-radius: 10px;
+  border-style: solid;
+  border-color: maroon;
 }
 
 .result-name {
