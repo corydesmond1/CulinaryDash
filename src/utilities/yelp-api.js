@@ -15,18 +15,11 @@ const options = {
  };
 
 export async function yelpBusinessSearch(term, location) {
-
   return await fetch(
-    `https://cors-anywhere.herokuapp.com/https://api.yelp.com/v3/businesses/search?term=${term}&location=${location}`,
-    options
-  )
-    .then((response) => response.json())
-    
+    `http://localhost:3001/restaurants?term=${term}&location=${location}`
+  ).then((res) => res.json());
 };
 
  export async function yelpBusinessDetail(businessId) {
-  return await fetch(
-    `https://cors-anywhere.herokuapp.com/https://api.yelp.com/v3/businesses/${businessId}`,
-    options
-  ).then((response) => response.json());
+   return await fetch(`http://localhost:3001/restaurants/${businessId}`).then((res) => res.json());
 };
