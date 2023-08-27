@@ -23,8 +23,8 @@ const Navbar = ({ user, setUser }) => {
   };
 
   const buttonStyles = {
-    backgroundColor: 'black',
-    color: 'white',
+    backgroundColor: 'white',
+    color: 'black',
     padding: '5px 10px',
     borderRadius: '5px',
     transition: 'background-color 0.3s, color 0.3s',
