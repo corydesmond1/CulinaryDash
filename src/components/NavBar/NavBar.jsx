@@ -8,7 +8,7 @@ const Navbar = ({ user, setUser }) => {
     display: 'flex',
     justifyContent: 'space-between',
     alignItems: 'center',
-    backgroundColor: 'red',
+    backgroundColor: 'brown',
     padding: '10px 20px',
   };
 
@@ -37,48 +37,48 @@ const Navbar = ({ user, setUser }) => {
     color: 'red',
   };
 
-  return (
-    <AppBar position="static" style={{ backgroundColor: 'red' }}>
-      <Toolbar>
-        <Typography variant="h6" component="div" sx={{ flexGrow: 1 }}>
-          "Culinary Dash"
-        </Typography>
-        <div style={navbarStyles}>
-          <div style={navbarButtonStyles}>
-            <Tab
-              label="Search"
-              component={Link}
-              to="/restaurants"
-              style={buttonStyles}
-              activeStyle={hoverStyles}
-            />
-            <Tab
-              label="History"
-              component={Link}
-              to="/orders"
-              style={buttonStyles}
-              activeStyle={hoverStyles}
-            />
-            <Tab
-              label="New Order"
-              component={Link}
-              to="/orders/new"
-              style={buttonStyles}
-              activeStyle={hoverStyles}
-            />
-          </div>
-          {user ? (
-            <>
-              <span style={helloTextStyles}>Hello, {user.name}</span>
-              <UserLogOut user={user} setUser={setUser} />
-            </>
-          ) : (
-            <span style={helloTextStyles}>Hello, guest</span>
-          )}
+return (
+  <AppBar position="static" style={{ backgroundColor: 'brown' }}>
+    <Toolbar>
+      <Typography variant="h6" component="div" sx={{ flexGrow: 1 }}>
+        Culinary Dash
+      </Typography>
+      <div style={navbarStyles}>
+      {user ? (
+          <>
+            <span style={helloTextStyles}>Hello, {user.name}</span>
+            <UserLogOut user={user} setUser={setUser} />
+          </>
+        ) : (
+          <span style={helloTextStyles}>Hello, guest</span>
+        )}
+        <div style={navbarButtonStyles}>
+          <Tab
+            label="Search"
+            component={Link}
+            to="/restaurants"
+            style={buttonStyles}
+            activeStyle={hoverStyles}
+          />
+          <Tab
+            label="History"
+            component={Link}
+            to="/orders"
+            style={buttonStyles}
+            activeStyle={hoverStyles}
+          />
+          <Tab
+            label="New Order"
+            component={Link}
+            to="/orders/new"
+            style={buttonStyles}
+            activeStyle={hoverStyles}
+          />
         </div>
-      </Toolbar>
-    </AppBar>
-  );
+      </div>
+    </Toolbar>
+  </AppBar>
+);
 };
 
 export default Navbar;
