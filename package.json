@@ -29,7 +29,8 @@
      "npm": "9.5.1" 
   },
   "scripts": {
-    "start": "react-scripts start",
+    "startdev": "react-scripts start",
+    "start": "node server",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
