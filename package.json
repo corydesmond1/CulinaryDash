@@ -24,6 +24,10 @@
     "react-scripts": "5.0.1",
     "serve-favicon": "^2.5.0"
   },
+  "engines":{
+     "node": "v18.16.0",
+     "npm": "9.5.1" 
+  },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
