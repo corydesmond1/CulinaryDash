@@ -3,13 +3,10 @@ import { yelpBusinessSearch } from '../../utilities/yelp-api';
 import './RestaurantSearchPage.css';
 import { Link } from 'react-router-dom';
 
-
-
 const YelpSearch = () => {
   const [term, setTerm] = useState('');
   const [location, setLocation] = useState('');
   const [businesses, setBusinesses] = useState([]);
-
   const handleSubmit = (event) => {
     event.preventDefault();
     yelpBusinessSearch(term, location).then(res => {
@@ -51,12 +48,4 @@ const YelpSearch = () => {
     </div>
   );
 };
-
 export default YelpSearch;
-
-
-
-
-
-
-
