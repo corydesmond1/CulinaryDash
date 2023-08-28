@@ -1,47 +1,51 @@
 .OrderDetail {
-  flex-direction: column;
-  justify-content: flex-start;
-  align-items: center;
-  padding: 3vmin;
-  font-size: 2vmin;
-  color: var(--text-light);
-}
-
-.OrderDetail .section-heading {
-  width: 100%
-}
-
-.OrderDetail .line-item-container {
-  margin-top: 3vmin;
-  justify-content: flex-start;
-  height: calc(100vh - 18vmin);
-  width: 100%;
-}
-
-.OrderDetail .total {
-  width: 100%;
-  display: grid;
-  grid-template-columns: 18.35vw 5.75vw 5.25vw;
-  padding: 1vmin 0;
-  color: var(--text-light);
-  border-top: .1vmin solid var(--tan-3);
-}
-
-.OrderDetail .total span {
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size: 1.5vw;
-  color: var(--text-dark);
+  height: 100vh;
+  background-color: var(--background-color); /* Change to your desired background color */
 }
 
-.OrderDetail .total span.right {
+.order-container {
   display: flex;
-  justify-content: flex-end;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  width: 70%; /* Adjust as needed */
+  max-width: 800px; /* Set a maximum width */
+  background-color: var(--white);
+  border: .1vmin solid var(--tan-3);
+  border-radius: 1vmin;
+  padding: 3vmin;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+ 
 }
 
-.OrderDetail .hungry {
-  position: absolute;
-  top: 50vh;
-  font-size: 2vmin;
+.line-item-container {
+  margin-bottom: 2vmin;
+  height: calc(100vh - 18vmin); /* Adjust to account for the footer and other sections */
+  overflow-y: auto;
+  /* overflow-x: hidden; */
+  white-space: nowrap; 
+}
+
+.total {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1vmin 0;
+  font-size: 1vw;
+  color: var(--text-dark);
+  border-top: .1vmin solid var(--tan-3);
+}
+
+.checkout-btn {
+  align-self: center;
+  padding: 1vmin 2vmin;
+  font-size: 1vw;
+  background-color: var(--orange);
+  color: var(--white);
+  border: none;
+  border-radius: 1vmin;
+  cursor: pointer;
 }

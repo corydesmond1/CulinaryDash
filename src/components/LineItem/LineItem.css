@@ -1,12 +1,13 @@
 .LineItem {
   width: 100%;
   display: grid;
-  grid-template-columns: 3vw 15.35vw 5.75vw 5.25vw;
+  grid-template-columns: 7.35vw 3.75vw 3.25vw; /* Adjust the column widths */
+  gap: 1vmin; /* Add gap between columns */
   padding: 1vmin 0;
   color: var(--text-light);
   background-color: var(--white);
   border-top: .1vmin solid var(--tan-3);
-  font-size: 1.5vw;
+  font-size: 1vw;
 }
 
 .LineItem:last-child {
@@ -17,17 +18,25 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  font-size: 1.3vw;
+  font-size: 0.7vw;
 }
 
 .LineItem .ext-price {
   display: flex;
   justify-content: flex-end;
   align-items: center;
-  font-size: 1.3vw;
+  font-size: 1vw;
 }
 
 .LineItem button {
   margin: 0;
 }
 
+.LineItem .item-name {
+  font-weight: bold;
+  font-size: 0.9vw; /* Adjust font size */
+}
+
+.LineItem .item-price {
+  font-size: 0.9vw; /* Adjust font size */
+}

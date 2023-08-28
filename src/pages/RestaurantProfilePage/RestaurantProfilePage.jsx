@@ -8,6 +8,7 @@ import Logo from "../../components/Logo/Logo";
 import CategoryList from "../../components/CategoryList/CategoryList";
 import MenuList from "../../components/MenuList/MenuList";
 import OrderDetail from "../../components/OrderDetail/OrderDetail";
+import BusinessDetail from "../../components/BusinessDetail/BusinessDetail";
 
 export default function RestaurantProfilePage({ user, setUser }) {
   const [menuItems, setMenuItems] = useState([]);
@@ -62,18 +63,10 @@ export default function RestaurantProfilePage({ user, setUser }) {
 
   return (
     <main className="RestaurantProfilePage">
+      <div className="left-section">
       <section className="business-details-section">
         <Logo />
-        <div className="business-details">
-          <img
-            className="profile-image"
-            src={businessDetails.image_url}
-            alt={businessDetails.name}
-          />
-          <div className="restaurant-name">{businessDetails.name}</div>
-          {/* Business Details */}
-          {/* Other Details */}
-        </div>
+        <BusinessDetail businessDetails={businessDetails} />
         <CategoryList 
         categories={categoriesRef.current} 
         activeCat={activeCat} 
@@ -86,6 +79,7 @@ export default function RestaurantProfilePage({ user, setUser }) {
           handleAddToOrder={handleAddToOrder}
         />
       </section>
+      </div>
 
       <section className="shopping-cart-section">
         <OrderDetail
