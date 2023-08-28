@@ -1,61 +1,20 @@
-/* RestaurantSearchPage.css */
-.results-container {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 20px;
-}
-
-.result-item {
-  width: 300px; /* Adjust width as needed */
-  border: 1px solid #ccc;
-  padding: 10px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  border-radius: 10px;
-}
-
-.result-image {
-  max-width: 100%;
-  height: auto;
-  margin-bottom: 10px;
-  object-fit: cover;
-  border-radius: 10px;
-}
-
-.result-name {
-  text-align: center;
-  color: black;
-  font-weight: bold;
-}
-
-/* Add styling for RestaurantProfilePage */
-.profile-container {
-  display: flex;
-  flex-direction: column;
-  align-items: left;
-  margin: 20px;
-}
-
-.profile-image {
-  max-width: 400px; /* Adjust the width as needed */
-  height: auto;
-  margin-bottom: 10px;
-  border-radius: 10px;
-}
-
-.restaurant-name {
-  font-size: 24px;
-  font-weight: bold;
-  color: black;
-}
-
-.details {
-  font-size: 18px;
-  margin-top: 10px;
-  color: black;
-}
-
-.details span {
-  margin-right: 10px;
-}
+.RestaurantProfilePage {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start; /* You can adjust alignment as needed */
+    padding: 20px;
+    min-height: 100vh;
+  }
+  
+  .left-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    width: 70%; /* Adjust as needed */
+  }
+  
+  .shopping-cart-section {
+    width: 40%; /* Adjust the width as needed */
+    min-height: 100%;
+  }

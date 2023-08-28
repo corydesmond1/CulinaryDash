@@ -1,4 +1,7 @@
 .CategoryList {
+  display: flex; /* Display children in a row */
+  justify-content: center;
+  gap: 100px; /* Add spacing between category items */
   color: var(--text-light);
   list-style: none;
   padding: 0;
