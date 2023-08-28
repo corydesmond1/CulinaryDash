@@ -14,7 +14,7 @@ app.use(logger("dev"));
 app.use(express.json());
 app.use(
   cors({
-    origin: "http://localhost:3000",
+    origin: ["http://localhost:3000", "https://culinarydash-1e778c071eab.herokuapp.com/"]
   })
 );
 
