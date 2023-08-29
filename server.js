@@ -3,6 +3,7 @@ const path = require("path");
 const favicon = require("serve-favicon");
 const logger = require("morgan");
 const cors = require("cors");
+const port = process.env.PORT || 3001;
 const { v4: uuidv4 } = require("uuid");
 const { DoorDashClient } = require("@doordash/sdk");
 // Always require and configure near the top
@@ -16,7 +17,7 @@ app.use(logger("dev"));
 app.use(express.json());
 app.use(
   cors({
-    origin: "http://localhost:3000",
+    origin: ["http://localhost:3000", "https://culinarydash-1e778c071eab.herokuapp.com/"]
   })
 );
 
@@ -29,7 +30,7 @@ app.use(express.static(path.join(__dirname, "build")));
 // assign the user object from the JWT to req.user
 app.use(require("./config/checkToken"));
 
-const port = process.env.PORT || 3001;
+
 
 // Put API routes here, before the "catch all" route
 app.use("/api/users", require("./routes/api/users"));

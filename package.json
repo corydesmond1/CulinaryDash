@@ -25,8 +25,13 @@
     "serve-favicon": "^2.5.0",
     "uuid": "^9.0.0"
   },
+  "engines": {
+    "node": "v18.16.0",
+    "npm": "9.5.1"
+  },
   "scripts": {
-    "start": "react-scripts start",
+    "startdev": "react-scripts start",
+    "start": "node server",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
@@ -48,6 +53,5 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
-  },
-  "proxy": "http://localhost:3001"
+  }
 }

@@ -21,7 +21,7 @@ export default function App() {
             <Route path="/restaurants" element={<RestaurantSearchPage />} />
             <Route path="/orders/new" element={<NewOrderPage user={user} setUser={setUser} />} />
             <Route path="/orders" element={<OrderHistoryPage />} />
-            <Route path="/*" element={<Navigate to="/orders/new" />} />
+            <Route path="/*" element={<Navigate to="/restaurants" />} />
             <Route path="/restaurants/:id" element={<RestaurantProfilePage />} />
           </Routes>
         ) : (
