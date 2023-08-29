@@ -31,4 +31,4 @@ Order Status
 Time was the biggest challenage, our application is only a demo at the moment. See below for next steps on future enhancements.
 
 # Next Steps
-Create an efficient online delivery platform with features like email notifications for orders, seamless Stripe integration for secure payments, a live delivery driver tracker to enhance transparency, search filter abilities, and the option for customers to leave reviews and comments. 
+Create an efficient online delivery platform with features like email notifications for orders, seamless Stripe integration for secure payments, a live delivery driver tracker to enhance transparency, search filter abilities, implement an API to fetch menus directly from businesses, and the option for customers to leave reviews and comments. 
