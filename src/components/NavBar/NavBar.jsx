@@ -67,13 +67,6 @@ return (
             style={buttonStyles}
             activeStyle={hoverStyles}
           />
-          <Tab
-            label="New Order"
-            component={Link}
-            to="/orders/new"
-            style={buttonStyles}
-            activeStyle={hoverStyles}
-          />
         </div>
       </div>
     </Toolbar>
