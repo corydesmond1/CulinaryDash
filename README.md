@@ -6,7 +6,7 @@ CulinaryDish is not just a food delivery app; it's your passport to a world of f
 Link - https://culinarydash-1e778c071eab.herokuapp.com/ 
 
 # Technology used
-React, Express, Node, Mongoose/MongoDB
+React, Express, Node, Mongoose/MongoDB, Heroku 
 
 # Features
 Users have the ability to sign up/login, search restaurants, add food items to cart and check out. 
@@ -28,7 +28,7 @@ Order Status
 ![Screenshot 2023-08-29 at 7 14 23 AM](https://github.com/corydesmond1/CulinaryDash/assets/64705060/dee870fd-bc24-43fa-998d-cbbc9ba6082d)
 
 # Challenging Code
-
+Time was the biggest challenage, our application is only a demo at the moment. See below for next steps on future enhancements.
 
 # Next Steps
-Create an efficient online delivery platform with features like email notifications for orders, seamless Stripe integration for secure payments, a live delivery driver tracker to enhance transparency, and the option for customers to leave reviews and comments. 
+Create an efficient online delivery platform with features like email notifications for orders, seamless Stripe integration for secure payments, a live delivery driver tracker to enhance transparency, search filter abilities, and the option for customers to leave reviews and comments. 
