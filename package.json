@@ -25,9 +25,9 @@
     "serve-favicon": "^2.5.0",
     "uuid": "^9.0.0"
   },
-  "engines":{
-     "node": "v18.16.0",
-     "npm": "9.5.1" 
+  "engines": {
+    "node": "v18.16.0",
+    "npm": "9.5.1"
   },
   "scripts": {
     "startdev": "react-scripts start",
