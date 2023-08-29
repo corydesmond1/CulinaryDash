@@ -61,7 +61,7 @@ return (
             activeStyle={hoverStyles}
           />
           <Tab
-            label="History"
+            label="Order Status"
             component={Link}
             to="/orders"
             style={buttonStyles}
